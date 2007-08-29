@@ -34,6 +34,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xev
-%{_mandir}/man1/xev.1x.bz2
+%{_mandir}/man1/xev.1x*
 
 
