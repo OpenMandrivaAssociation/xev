@@ -1,6 +1,6 @@
 Name:		xev
-Version:	1.0.2
-Release:	%mkrel 3
+Version:	1.0.3
+Release:	%mkrel 1
 Summary:	Print contents of X events
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -34,4 +34,4 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_bindir}/xev
-%{_mandir}/man1/xev.1x*
+%{_mandir}/man1/xev.*
