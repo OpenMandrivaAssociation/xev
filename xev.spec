@@ -1,12 +1,9 @@
 Name:		xev
-Version:	1.0.3
-Release:	%mkrel 4
+Version:	1.0.4
+Release:	%mkrel 1
 Summary:	Print contents of X events
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
-# (blino) from Debian, flush stdout after each event,
-# so that output is not be buffered when used in scripts
-Patch0:		02_xev_flush_standard_output.diff
 License:	MIT
 BuildRoot:	%{_tmppath}/%{name}-root
 
@@ -20,7 +17,6 @@ clicked in, etc.). It is useful for testing input devices.
 
 %prep
 %setup -q -n %{name}-%{version}
-%patch0 -p2 -b .flush
 
 %build
 %configure2_5x	--x-includes=%{_includedir}\
