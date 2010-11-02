@@ -1,5 +1,5 @@
 Name:		xev
-Version:	1.0.4
+Version:	1.1.0
 Release:	%mkrel 1
 Summary:	Print contents of X events
 Group:		Development/X11
