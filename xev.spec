@@ -19,6 +19,7 @@ clicked in, etc.). It is useful for testing input devices.
 %setup -q -n %{name}-%{version}
 
 %build
+autoreconf -fi
 %configure2_5x	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
