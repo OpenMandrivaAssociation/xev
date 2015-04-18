@@ -1,5 +1,5 @@
 Name:		xev
-Version:	1.2.1
+Version:	1.2.2
 Release:	1
 Summary:	Print contents of X events
 Group:		Development/X11
@@ -20,8 +20,9 @@ clicked in, etc.). It is useful for testing input devices.
 
 %build
 autoreconf -fi
-%configure	--x-includes=%{_includedir}\
-		--x-libraries=%{_libdir}
+%configure \
+	--x-includes=%{_includedir} \
+	--x-libraries=%{_libdir}
 
 %make
 
