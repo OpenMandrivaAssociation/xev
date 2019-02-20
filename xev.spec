@@ -1,6 +1,6 @@
 Name:		xev
-Version:	1.2.2
-Release:	7
+Version:	1.2.3
+Release:	1
 Summary:	Print contents of X events
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -16,7 +16,7 @@ anything happens to the window (such as it being moved, resized, typed in,
 clicked in, etc.). It is useful for testing input devices.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version} -p1
 
 %build
 autoreconf -fi
@@ -24,10 +24,10 @@ autoreconf -fi
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xev
