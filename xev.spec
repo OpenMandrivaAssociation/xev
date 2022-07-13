@@ -1,9 +1,9 @@
 Name:		xev
-Version:	1.2.4
+Version:	1.2.5
 Release:	1
 Summary:	Print contents of X events
 Group:		Development/X11
-Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 
 BuildRequires: pkgconfig(x11) >= 1.0.0
