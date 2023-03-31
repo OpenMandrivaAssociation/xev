@@ -1,6 +1,6 @@
 Name:		xev
 Version:	1.2.5
-Release:	1
+Release:	2
 Summary:	Print contents of X events
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
