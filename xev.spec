@@ -1,5 +1,5 @@
 Name:		xev
-Version:	1.2.6
+Version:	1.2.7
 Release:	1
 Summary:	Print contents of X events
 Group:		Development/X11
